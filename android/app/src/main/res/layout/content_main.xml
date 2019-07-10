@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="405dp"
+        android:layout_height="592dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="359dp"
+            android:layout_height="254dp"
+            tools:srcCompat="@drawable/ff" />
+
+        <TextView
+            android:id="@+id/txtLabelLoc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your current location:" />
+
+        <TextView
+            android:id="@+id/editLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45.501476,-73.556435" />
+
+        <TextView
+            android:id="@+id/txtLabelLoc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alert in this sector:" />
+
+        <TextView
+            android:id="@+id/txtLabelLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None" />
+
+        <Button
+            android:id="@+id/btSubscribe5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disable location monitor" />
+
+        <Button
+            android:id="@+id/btSubscribe6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alert me for this area" />
+
+        <Button
+            android:id="@+id/btSubscribe7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alert me for a other area" />
+
+        <Button
+            android:id="@+id/btSubscribe8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage my alerts" />
+
+        <Button
+            android:id="@+id/btSubscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See active alerts" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
